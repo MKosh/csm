@@ -19,3 +19,5 @@ target_link_libraries(test
     matplot
     nodesoup
 )
+
+add_subdirectory(ch1)
