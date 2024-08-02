@@ -14,11 +14,11 @@ in
       ninja
       nlohmann_json
       pkg-config
-      matplotplusplus
+      # matplotplusplus
       imgui
       glfw
-      imgui
       implot
+      imgui
     ];
 
     shellHook = ''

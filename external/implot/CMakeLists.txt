@@ -7,6 +7,9 @@ add_library(implot
 target_include_directories(implot
   PUBLIC
     $ENV{IMPLOT}
+    $ENV{IMGUI}/include
+    $ENV{IMGUI}/include/imgui
+    $ENV{IMGUI}/include/imgui/backends
 )
 
 # target_link_libraries(implot
