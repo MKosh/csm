@@ -19,10 +19,14 @@ in
       glfw
       implot
       imgui
+      wayland
     ];
 
     shellHook = ''
-      export MATPLOTPP=${matplotplusplus}
+      # export MATPLOTPP=${matplotplusplus}
+      LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/run/opengl-driver/lib:/run/opengl-driver-32/lib"
+      LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${pkgs.wayland}/lib"
+      export LD_LIBRARY_PATH
       export IMGUI=${pkgs.imgui}
       export IMPLOT=${implot}
     '';
