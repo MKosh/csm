@@ -1,5 +1,5 @@
 #pragma once
-#define GLAD_GL_IMPLEMENTATION
+
 #include "glad/gl.h"
 #include <GLFW/glfw3.h>
 #include <cstdint>
@@ -18,5 +18,8 @@ private:
   GLFWwindow* m_window;
   uint32_t m_width = 800;
   uint32_t m_height= 600;
-  auto KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode) -> void;
+  bool m_running = false;
+  static auto KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode) -> void;
+  static auto FramebufferSizeCallback(GLFWwindow* window, int width, int height) -> void;
 };
+

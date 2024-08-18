@@ -17,8 +17,8 @@ in
       # matplotplusplus
       imgui
       glfw
-      implot
-      imgui
+      # implot
+      # imgui
       wayland
     ];
 
@@ -27,8 +27,8 @@ in
       LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/run/opengl-driver/lib:/run/opengl-driver-32/lib"
       LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${pkgs.wayland}/lib"
       export LD_LIBRARY_PATH
-      export IMGUI=${pkgs.imgui}
-      export IMPLOT=${implot}
+      #export IMGUI=${pkgs.imgui}
+      #export IMPLOT=${implot}
     '';
 
   }

@@ -1,11 +1,10 @@
-add_executable(distribution_of_money distribution_of_money.cc)
+add_executable(distribution_of_money main.cc distribution_of_money.cc)
 
 target_include_directories(distribution_of_money
   PUBLIC
     ${CMAKE_SOURCE_DIR}/external
-    $ENV{IMGUI}/include
-    $ENV{IMGUI}/include/imgui
-    $ENV{IMGUI}/include/imgui/backends
+    ${IMGUI_SRC}
+    ${IMGUI_SRC}/backends
 )
 
 target_link_libraries(distribution_of_money
