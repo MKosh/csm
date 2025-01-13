@@ -14,6 +14,7 @@ find_package(OpenGL REQUIRED)
 find_package(imgui QUIET)
 
 if (NOT TARGET imgui::imgui)
+  message(STATUS "--- IMGUI not found on system. Fetching content")
   FetchContent_Declare(
     imgui
     GIT_REPOSITORY https://github.com/ocornut/imgui.git
