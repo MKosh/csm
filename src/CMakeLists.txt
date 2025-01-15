@@ -21,5 +21,8 @@ target_link_libraries(test PUBLIC
     OpenGL::OpenGL
 )
 
+add_subdirectory(core)
+
 add_subdirectory(ch1)
 add_subdirectory(ch3)
+
