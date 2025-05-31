@@ -9,6 +9,7 @@ target_include_directories(ComparingEulerAlgorithms PUBLIC
 )
 
 target_link_libraries(ComparingEulerAlgorithms PUBLIC
+  glad
   glfw
   imgui
   implot

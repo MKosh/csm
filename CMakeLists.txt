@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.24)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS on)
 
-project(test LANGUAGES CXX)
+project(test LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_CXX_COMPILER clang++)
 # set(GLFW_INCLUDE_NONE)
