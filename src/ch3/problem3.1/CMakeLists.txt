@@ -6,6 +6,7 @@ target_include_directories(ComparingEulerAlgorithms PUBLIC
   ${CMAKE_SOURCE_DIR}/src
   ${IMGUI_SRC}
   ${IMGUI_SRC}/backends
+  ${IMPLOT_SRC}
 )
 
 target_link_libraries(ComparingEulerAlgorithms PUBLIC

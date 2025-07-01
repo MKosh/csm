@@ -27,7 +27,10 @@ int main() {
   glfwMakeContextCurrent(window);
   int version = gladLoadGL(glfwGetProcAddress);
 
-  ShaderProgram::Shader shaders[2] = { {GL_VERTEX_SHADER, "resources/shaders/ch3/projectile.vert"}, {GL_FRAGMENT_SHADER, "resources/shaders/ch3/projectile.frag"} };
+  ShaderProgram::Shader shaders[2] = {
+    {GL_VERTEX_SHADER, "resources/shaders/ch3/projectile.vert"}, {GL_FRAGMENT_SHADER, "resources/shaders/ch3/projectile.frag"}
+  };
+
   ShaderProgram shader_program{ shaders };
 
   if (version == 0) {
